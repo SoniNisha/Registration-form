@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Registration Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h2 {
+            padding: 12px 0px;
+            background-image: linear-gradient(45deg,orange,pink,red);
+            width: 20vw;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        #main {
+            background-image: url(https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        #sub {
+            width: 60vw;
+            height: 70vh;
+            margin: auto;
+        }
+
+        table {
+            margin: auto;
+            border: 2px solid black;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        tr {
+            line-height: 50px;
+            font-size: 22px;
+        }
+
+        td {
+            text-align: left;
+            padding-left: 22px;
+            background-color: rgba(112, 114, 121, 0.2);
+        }
+
+        th {
+            background-color: rgba(112, 114, 121, 0.2);
+            font-size: 25px;
+        }
+
+        input {
+            height: 25px;
+            width: 12vw;
+            font-size: 18px;
+        }
+
+        input:hover {
+            border: 1px solid black;
+        }
+
+        button {
+            height: 30px;
+            width: 80px;
+            font-size: 16px;
+            margin: 15px;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            font-size: 18px;
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        a:hover {
+            font-size: 18px;
+            background-color:black;
+            color: white;
+            padding: 4.6px;
+            padding-left: 26.5px;
+            padding-right: 26.5px;
+            vertical-align: center;
+            line-height: 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="head" style="padding-top:20px;">
+        <h2>
+            Registration Page
+        </h2>
+    </div>
+        <form>
+            <div id="sub">
+                <table style="text-align: left;">
+                    <tr style="height: 60px; padding-bottom: 20px;">
+                        <th colspan="5">Register Yourself</th>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 17px;"><i class="fa fa-user" aria-hidden="true"></i></td>
+                        <td><label>Full Name : </label></td>
+                        <td><input type="text" placeholder="First Name" name="first-name" required minlength="4" />
+                        </td>
+                        <td><input type="text" placeholder="Middle Name" name="mid-name"/></td>
+                        <td><input type="text" placeholder="Last Name" name="last-name"/></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; padding-right: 7px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
+                        <td><label>Email : </label></td>
+                        <td><input type="email" placeholder="Email" name="email" required minlength="10" pattern="./@gmail.com" />
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 15px;"><i class="fa fa-unlock-alt" aria-hidden="true"></i></td>
+                        <td><label>Password : </label></td>
+                        <td><input type="password" placeholder="Password" name="password" required minlength="8" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 15px;"><i class="fa fa-phone" aria-hidden="true"></i></td>
+                        <td><label>Contact : </label></td>
+                        <td><input type="tel" placeholder="Contact Number" name="phone no" required maxlength="10" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 12px;"><i class="fa fa-calendar" aria-hidden="true"></i></td>
+                        <td><label>Date of Birth : </label></td>
+                        <td><input type="number" placeholder="Date" name="date" required maxlength="2" min="1" max="31" /></td>
+                        <td><select id="month" style="width: 12vw; height: 25px; font-size: 15px;">
+                            <option value="Select Month">Select Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Year" name="year" required maxlength="4" min="1800" max="2021" /></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 15px;"><i class="fa fa-male" aria-hidden="true"></i></td>
+                        <td><label>Gender : </label></td>
+                        <td><input style="width: 50px;" type="radio" name="gender" value="male" />Male</td>
+                        <td><input style="width: 50px;" type="radio" name="gender" value="female" />Female</td>
+                        <td><input style="width: 50px;" type="radio" name="gender" value="other" />Other</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 12px;"><i class="fa fa-book" aria-hidden="true"></i></td>
+                        <td><label>Courses : </label></td>
+                        <td><input style="width: 50px;" type="checkbox" name="course" value="html" />HTML</td>
+                        <td><input style="width: 50px;" type="checkbox" name="course" value="css" />CSS</td>
+                        <td><input style="width: 50px;" type="checkbox" name="course" value="javaScript" />JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><input style="width: 50px;" type="checkbox" name="course" value="react" />React</td>
+                        <td><input style="width: 50px;" type="checkbox" name="course" value="nodeJs" />Node JS</td>
+                        <td><input style="width: 50px;" type="checkbox" name="course" value="angularJs" />Angular JS</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 12px;"><i class="fa fa-calendar-o" aria-hidden="true"></i></td>
+                        <td><label>Joining Date : </label></td>
+                        <td><input style="width: 180px; cursor: pointer;" type="date" name="joindate" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align: center;">
+                            <button value="submit">Register</button>
+                            <button value="reset">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
